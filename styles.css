@@ -88,8 +88,79 @@ header {
 .me{
     position: absolute;
     bottom: 0;
-    height: 88%;
+    height: 85%;
     width: 570px;
     right: 90px;
     
 }
+@media (max-width: 991px){
+    .header{
+        padding: 20px 40px;
+    }
+    ul.menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background: #09093a;
+        z-index: 100;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .menu li a {
+        color: white;
+        margin-left: 0%;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .toggleMenu {
+        position: relative;
+        width: 1000px;
+        height: 27px;
+        left: 100px;
+        background: url(Photos/bars.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-position: center;
+        z-index: 1000;
+    }
+    .toggleMenu:hover{
+        position: relative;
+        width: 1000px;
+        height: 27px;
+        left: 100px;
+        background: url(Photos/barsfilled.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-position: center;
+        z-index: 1000;
+        transition: 0.3s ease-in;
+    }
+    .toggleMenu.active {
+        position: fixed;
+        width: 1000px;
+        height: 27px;
+        right: 44px;
+        background: url(Photos/close.png);
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main {
+        padding: 40px 40px 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content {
+        max-width: 96%;
+    }
+}
+    

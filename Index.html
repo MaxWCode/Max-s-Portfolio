@@ -16,6 +16,8 @@
     <section class="main">
             <header>
                 <h2 class="logo"> Portfolio </h2>
+                <div class="toggleMenu" onclick="menuToggle()"></div>
+
                 <ul class="menu">
                     <li><a href="#">Bio</a></li>
                     <li><a href="#">Experience</a></li>
@@ -31,5 +33,13 @@
         </div>
         <img src="Photos/WebsiteBackground.jpg" class="me">
     </section>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu')
+            const menu = document.querySelector('.menu')
+            toggleMenu.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>
