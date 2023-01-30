@@ -1,0 +1,95 @@
+
+/* ------------ Global ------------ */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------ Hero & Nav ------------ */
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    /* background-image: url("Photos/WebsiteBackground\ copy.jpg");
+    background-position: center;
+    background-size: cover; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.menu {
+    position: relative;
+    display: flex;
+}
+.menu li {
+    list-style: none;
+}
+.menu li a {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    margin-left: 140px;
+}
+.menu li a:hover {
+    color: rgb(236, 76, 76);
+}
+.content {
+    position: relative;
+    max-width: 600px;
+    z-index: 1;
+}
+.content h1 {
+    color: white;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+.content h2 {
+    color: white;
+    font-size: 2em;
+}
+.content p{
+    color: aliceblue;
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+.content a {
+    padding: 12px 24px;
+    text-decoration: none;
+    background: white;
+    color: black;
+    display: inline-block;
+}
+.content a:hover {
+    background: rgba(236, 76, 76, 0.781);
+    box-shadow: 4px 5px 15px rgba(23, 17, 200, 0.8);
+    transition: 0.5s ease;
+}
+.me{
+    position: absolute;
+    bottom: 0;
+    height: 88%;
+    width: 570px;
+    right: 90px;
+    
+}
