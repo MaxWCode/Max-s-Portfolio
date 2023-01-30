@@ -13,9 +13,6 @@
     width: 100%;
     min-height: 100vh;
     background-color: black;
-    /* background-image: url("Photos/WebsiteBackground\ copy.jpg");
-    background-position: center;
-    background-size: cover; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +23,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 40px;
+    padding-right: 95px;
+    padding-left: 52px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +48,7 @@ header {
     text-decoration: none;
     font-size: large;
     color: white;
-    margin-left: 140px;
+    margin-left: 100px;
 }
 .menu li a:hover {
     color: rgb(236, 76, 76);
@@ -89,13 +88,22 @@ header {
     position: absolute;
     bottom: 0;
     height: 85%;
-    width: 570px;
+    width: 480px;
     right: 90px;
     
 }
 @media (max-width: 991px){
     .header{
-        padding: 20px 40px;
+        padding: 20px 80px;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
     }
     ul.menu{
         position: fixed;
@@ -104,9 +112,9 @@ header {
         width: 100%;
         height: 100%;
         display: none;
-        background: #09093a;
+        background: #1e1e29;
         z-index: 100;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
     }
@@ -127,8 +135,8 @@ header {
         background: url(Photos/bars.png);
         background-size: 30px;
         background-repeat: no-repeat;
-        cursor: pointer;
         background-position: center;
+        cursor: pointer;
         z-index: 1000;
     }
     .toggleMenu:hover{
@@ -139,13 +147,13 @@ header {
         background: url(Photos/barsfilled.png);
         background-size: 30px;
         background-repeat: no-repeat;
-        cursor: pointer;
         background-position: center;
+        cursor: pointer;
         z-index: 1000;
         transition: 0.3s ease-in;
     }
     .toggleMenu.active {
-        position: fixed;
+        position: relative;
         width: 1000px;
         height: 27px;
         right: 44px;
@@ -161,6 +169,30 @@ header {
     }
     .content {
         max-width: 96%;
+    }
+    .me {
+        position: relative;
+         height: initial;
+         right: initial;
+         width: 80%;
+         bottom: 0;
+    }
+    .content {
+        max-width: 96%;
+        font-size: smaller;
+    }
+    @media(max-width: 550px)
+    {
+        .content{
+            margin-top: 50px;
+        }
+        .content h1{
+            font-size: 2em;
+        }
+        .content h2{
+            font-weight: 1.5em;
+        }
+        
     }
 }
     
