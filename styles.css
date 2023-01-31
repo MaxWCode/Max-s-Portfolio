@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* ------------ Hero & Nav ------------ */
+/* ------------ Main ------------ */
 .main {
     position: relative;
     width: 100%;
@@ -30,13 +30,8 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.logo {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 2em;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-}
+/* ------------ Menu ------------ */
+
 .menu {
     position: relative;
     display: flex;
@@ -84,6 +79,17 @@ header {
     box-shadow: 4px 5px 15px rgba(23, 17, 200, 0.8);
     transition: 0.5s ease;
 }
+
+/* ------------ Logo ------------ */
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+/* ------------ Picture ------------ */
 .me{
     position: absolute;
     bottom: 0;
@@ -92,6 +98,7 @@ header {
     right: 90px;
     
 }
+/* ------------ Screen Changes ------------ */
 @media (max-width: 991px){
     .header{
         padding: 20px 80px;
